@@ -1,6 +1,20 @@
-.App {
-  text-align: center;
+:root {
+  --main-purple-color: #724da0;
+  --main-black-color: #141416;
+  --main-blue-color: #48E0E4;
+  --main-lightblue-color: #D7FBF6;
+  --main-grey-color: #a6a6a6;
+  --main-white-color: white;
+  color:white;
+  font-size: calc(10px + 1vmin);
+  background-color:var(--main-black-color);
 }
+/* .App {
+  text-align: center;
+} */
+/* *{
+cursor: none;
+} */
 
 .App-logo {
   height: 40vmin;
