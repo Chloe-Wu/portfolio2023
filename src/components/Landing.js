@@ -556,7 +556,7 @@ function Landing(){
         <div className="section contactMe" ref={contact} id='contact'>
             <img src={drink} alt=""/> 
                 <div>
-                    <div className="title">Contact me for more details</div>
+                    <div className="title">Contact me for more details!</div>
                     <div>Would you like to know more details or just say hey? Feel free to contact me!</div>
                     <div className="contactInfo">
                         <TbBrandGmail size={30} color="white"/>

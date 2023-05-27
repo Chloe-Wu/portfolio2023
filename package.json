@@ -1,7 +1,7 @@
 {
-  "homepage": "https://github.com/Chloe-Wu/portfolio2023.git",
+  "homepage": "https://chloe-wu.github.io/portfolio2023",
   "name": "portfolio2023",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
