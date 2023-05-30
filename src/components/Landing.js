@@ -1,6 +1,5 @@
 import React from "react";
 import {useRef} from "react";
-import {useState} from 'react';
 import {Link} from 'react-scroll';
 
 import "./Nav.css";
@@ -29,13 +28,13 @@ import dec12 from './dec12.png'
 import dec14 from './dec14.png'
 import dec15 from './dec15.png'
 
-import { AiFillGithub,  AiFillLinkedin, AiFillHtml5, AiFillYoutube, AiFillDribbbleCircle,AiOutlineArrowDown} from "react-icons/ai";
+import { AiFillGithub,  AiFillLinkedin, AiFillHtml5, AiFillYoutube, AiFillDribbbleCircle} from "react-icons/ai";
 import { IoLogoCss3, IoLogoPython } from "react-icons/io";
 import { SiJavascript,SiFigma,SiVisualstudio,SiMicrosoftazure,SiAdobephotoshop,SiAdobeillustrator,SiAdobexd } from "react-icons/si";
 import { IoLogoReact } from "react-icons/io5";
 import { TbSeo,TbBrandGmail } from "react-icons/tb";
 import { FiFigma,FiExternalLink } from "react-icons/fi";
-import { FaMailchimp, FaWordpress } from "react-icons/fa";
+import {FaWordpress } from "react-icons/fa";
 import { HiArrowDown } from "react-icons/hi";
 
 
@@ -47,20 +46,9 @@ function Landing(){
     const aboutMe =useRef(null);
     const skills =useRef(null);
     const projects =useRef(null);
-    const resume =useRef(null);
     const contact =useRef(null);
 
 
-    const scrollToSection = (elementRef) =>{
-        window.scrollTo({
-            top:elementRef.current.offsetTop,
-            behavior:"smooth",
-        });
-
-
-
-
-    };
 
     return (
         <div>
@@ -72,7 +60,7 @@ function Landing(){
                     <path d="M1.84 10.404L4.528 7.692L1.84 4.992H3.772L6.46 7.692L3.772 10.404H1.84Z" fill="black"/>
                     <path className="underline"d="M7.648 10.168V8.884H12.676V10.168H7.648Z" fill="black"/>
                 </svg>
-                <a href = "#"><span>DEV</span><span className="decor">/SIGN</span></a>
+                <a href = "./"><span>DEV</span><span className="decor">/SIGN</span></a>
             </div>
             <div className="labels">
                 {/* <div className="label" onClick={()=>scrollToSection(aboutMe)}>About</div>
@@ -106,9 +94,9 @@ function Landing(){
                     <div className="text">Hi,I'm Yiwei Wu. A multi-disciplinary front-end / UX Software Engineer based in Seattle, WA.</div>
                     <div className="icons">
                         <div><b>Follow Me ——</b> </div>
-                        <a href="#"><AiFillGithub  size={24} color="var(--main-white-color)"/></a>
-                        <a href="#"><AiFillLinkedin size={24} color="var(--main-white-color)"/></a>
-                        <a href="#"><AiFillDribbbleCircle size={24} color="var(--main-white-color)"/></a>
+                        <a href="./"><AiFillGithub  size={24} color="var(--main-white-color)"/></a>
+                        <a href="./"><AiFillLinkedin size={24} color="var(--main-white-color)"/></a>
+                        <a href="./"><AiFillDribbbleCircle size={24} color="var(--main-white-color)"/></a>
                     </div>
                 </div>
                 <img className="dec1" src={dec1} alt=""/>
@@ -467,14 +455,6 @@ function Landing(){
             <img className="dec9" src={dec9} alt=""/> 
         </div>
         
-                {/* <div className="sectionName project">
-                    <div className="title">Projects</div>
-                    <div className="tab">
-                        <div className="option"><a href="#">All</a></div>
-                        <div className="option"><a href="#">Development</a></div>
-                        <div className="option"><a href="#">Design</a></div>
-                    </div>
-                </div> */}
         {/* rapid response project */}
                 <div className=" section rapidResponse project">
                     <img className="rrmap" src={rrmap} alt=""/>
@@ -486,15 +466,15 @@ function Landing(){
                     <div className="subTitle">First Responder Platform</div>
                         <div className="projectName">School Active Shooter Rapid Response</div>
                         <div className="logo">
-                            <img src={tmobileLogo}/>
-                            <img src={gix}/>
+                            <img src={tmobileLogo} alt=""/>
+                            <img src={gix} alt=""/>
                         </div>
                         <div className="projectDescription">A innovative web app which visualizes data collected by the IoT project's hardware on an interactive map of the school compound allowing first responders to quickly identify high threat areas, coordinate responses, and ultimately make tactically sound decisions to take control of the situation faster. </div>
                         <div className="tech"><span>React</span><span>Azure</span></div>
                         <div className="buttons">
-                            <a href="#"><span>Code</span><AiFillGithub  size={30} color="white" /></a>
-                            <a href="#"><span>Video Demo</span><AiFillYoutube  size={30} color="white" /></a>
-                            <a href="#"><span>Design</span><FiFigma  size={30} color="white" /></a>
+                            <a href="./"><span>Code</span><AiFillGithub  size={30} color="white" /></a>
+                            <a href="./"><span>Video Demo</span><AiFillYoutube  size={30} color="white" /></a>
+                            <a href="./"><span>Design</span><FiFigma  size={30} color="white" /></a>
                         </div>
                     </div>
                 </div>
@@ -506,9 +486,9 @@ function Landing(){
                         <div className="projectDescription">345pi is a edtech start up company which focused on creating the mobile app to gamified the calculus learning path. When I worked in the company, I developed the company landing page and designed the mobile app.</div>
                         <div className="tech"><span>React</span><span>Next.js</span><span>Tailwind CSS</span></div>
                         <div className="buttons">
-                            <a href="#"><span>Code</span><AiFillGithub  size={30} color="black" /></a>
-                            <a href="#"><span>Live Demo</span><FiExternalLink  size={30} color="black" /></a>
-                            <a href="#"><span>Mobile Design</span><FiFigma  size={30} color="black" /></a>
+                            <a href="./"><span>Code</span><AiFillGithub  size={30} color="black" /></a>
+                            <a href="./"><span>Live Demo</span><FiExternalLink  size={30} color="black" /></a>
+                            <a href="./"><span>Mobile Design</span><FiFigma  size={30} color="black" /></a>
                         </div>
                     </div>
                     <img src={piImage} alt=""/>    
@@ -524,9 +504,9 @@ function Landing(){
                         <div className="projectDescription">Monitor the remote meeting Anxiety and boost efficiency for both presenters and audiences during presentations through emotional design. </div>
                         <div className="tech"><span>IoT</span>JS<span></span>Python</div>
                         <div className="buttons">
-                            <a href="#"><span>Code</span><AiFillGithub  size={30} color="black" /></a>
-                            <a href="#"><span>Video Demo</span><AiFillYoutube  size={30} color="black" /></a>
-                            <a href="#"><span>Design</span><FiFigma  size={30} color="black" /></a>
+                            <a href="./"><span>Code</span><AiFillGithub  size={30} color="black" /></a>
+                            <a href="./"><span>Video Demo</span><AiFillYoutube  size={30} color="black" /></a>
+                            <a href="./"><span>Design</span><FiFigma  size={30} color="black" /></a>
                         </div>
                     </div>
                 </div>
@@ -540,9 +520,9 @@ function Landing(){
                         <div className="projectDescription">345pi is a edtech start up company which focused on creating the mobile app to gamified the calculus learning path. When I worked in the company, I developed the company landing page and designed the mobile app.</div>
                         <div className="tech"><span>WordPress</span><span>SEO</span></div>
                         <div className="buttons">
-                            {/* <a href="#"><span>Code</span><AiFillGithub  size={30} color="black" /></a> */}
-                            <a href="#"><span>Live Demo</span><FiExternalLink  size={30} color="black" /></a>
-                            {/* <a href="#"><span>Mobile Design</span><FiFigma  size={30} color="black" /></a> */}
+
+                            <a href="./"><span>Live Demo</span><FiExternalLink  size={30} color="black" /></a>
+
                         </div>
                     </div>
                     <img src={micap} alt=""/>    
